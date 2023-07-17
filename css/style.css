@@ -42,8 +42,18 @@ body {
 }
 
 .header {
+    height: 73px;
+}
+
+.header-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     padding: 16px 0 17px 0;
     box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.14);
+    background: #fff;
+    z-index: 2;
 }
 
 .container {
@@ -108,15 +118,19 @@ body {
 
 .hero-wrapper {
     display: flex;
+    justify-content: space-between;
+    gap: 50px;
 }
 
 .hero-content {
-    width: 595px;
+    max-width: 595px;
+    width: 100%;
     padding-top: 44px;
 }
 
 .hero-img {
-    width: 696px;
+    max-width: 696px;
+    width: 100%;
 }
 
 .hero-subtitle {
@@ -138,7 +152,8 @@ body {
     font-weight: 500;
     font-size: 20px;
     line-height: 30px;
-    width: 570px;
+    max-width: 570px;
+    width: 100%;
     margin: 9px 0 28px 0;
 }
 
@@ -198,14 +213,17 @@ body {
     display: flex;
     padding-left: 52px;
     gap: 76px;
+    
 }
 
 .second-img {
-    width: 594px;
+    max-width: 594px;
+    width: 100%;
 }
 
 .second-content {
-    width: 569px;
+    max-width: 569px;
+    width: 100%;
 }
 
 .second-subtitle {
@@ -458,4 +476,23 @@ body {
     top: 50%;
     right: -8px;
     transform: translateY(-50%); 
+}
+
+.btn-up {
+    position: fixed;
+    z-index: 2;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-image: url(../img/arrow-up-solid.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    right: 20px;
+    bottom: 100px;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    background-size: 50%;
+    display: none;
+
+    
 }

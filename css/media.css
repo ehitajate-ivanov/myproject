@@ -1,12 +1,42 @@
-@media(max-width:1450px){
-    .container{
+@media(max-width:1450px) {
+    .container {
         padding: 0 10px;
     }
+
+    .hero-wrapper {
+        justify-content: center;
+        flex-wrap: wrap;
+        
+    }
+
+    .second-wrapper{
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-left: 0;
+    }
 }
-@media(max-width:850px){
+
+@media(max-width:1200px) {
+    .contact-wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+    
+    }
+
+    .contact-form {
+        max-width: 810px;
+        width: 100%;
+    }
+
+
+}
+
+
+@media(max-width:850px) {
     .nav {
         background: #fff;
         position: absolute;
+        z-index: 2;
         height: 100vh;
         top: 0;
         right: 0;
@@ -16,6 +46,12 @@
         align-items: center;
         justify-content: center;
         overflow-x: hidden;
+        transition: .4s linear;
+
+    }
+
+    .nav.active {
+        left: 0;
     }
 
     .menu {
@@ -23,14 +59,79 @@
         align-items: center;
     }
 
-    .burger{
+    .burger {
+        position: relative;
+        z-index: 5;
         display: block;
         width: 60px;
         height: 40px;
         background: url(../img/burger.svg) no-repeat center;
+        transition: .2s linear;
+    }
+
+    .burger.active {
+        background: url(../img/close.svg) no-repeat center;
+
+    }
+
+    .map {
+        width: 100%;
     }
 }
-@media(max-width:){}
-@media(max-width:){}
-@media(max-width:){}
-@media(max-width:){}
+
+@media(max-width:768px) {
+    .footer-top {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+}
+
+
+@media(max-width:590px) {
+    .footer-bottom {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+}
+
+@media(max-width:450px) {
+    .logo {
+        width: 180px;
+    }
+
+    .hero-block {
+        flex-wrap: wrap;
+    }
+
+    .play {
+        width: 100%;
+        text-align: center;
+        background: transparent;
+        padding: 15px 0 13px 0px;
+
+    }
+
+    .hero-link {
+        width: 100%;
+    }
+
+    .contact-form {
+        padding: 32px 15px 40px 15px;
+    }
+}
+@media(max-width:390px) {
+    .hero-item {
+        font-size: 18px;
+    }
+
+    .hero-subtitle {
+        font-size: 20px;
+    }
+
+    .hero-title {
+        font-size: 30px;
+        line-height: 35px;
+    }
+}
